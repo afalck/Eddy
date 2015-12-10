@@ -12,6 +12,11 @@ import Foundation
 
 
 class ViewController: UIViewController, NavigationListener {
+	
+	let calc = CurrentCalculator();
+	
+	@IBOutlet var rawFeed: UILabel!
+	@IBOutlet var currentVelText: UILabel!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -25,8 +30,6 @@ class ViewController: UIViewController, NavigationListener {
 		// Dispose of any resources that can be recreated.
 	}
 
-	@IBOutlet var rawFeed: UILabel!
-
 
 	func start(){
 		var socketConnection = SocketConnection(host: "localhost", port: 5001);
@@ -39,6 +42,10 @@ class ViewController: UIViewController, NavigationListener {
 	
 	func receivedNavigationData(navigationData: NavigationData){
 		NSLog("\(navigationData)");
+		let currentVelocity = calc.currentVelocityFromNavigationData(navigationData);
+		
+		rawFeed.text = "\(navigationData)"
+		currentVelText.text = "\(currentVelocity)"
 	}
 	
 	

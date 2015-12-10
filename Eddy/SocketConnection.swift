@@ -26,7 +26,7 @@ public class SocketConnection : NSObject, NSStreamDelegate{
 		self.port = port
 		self.status = false
 		output = ""
-//		super.init()
+		super.init()
 	}
 	
 
@@ -44,7 +44,6 @@ public class SocketConnection : NSObject, NSStreamDelegate{
 			break
 			
 		case NSStreamEvent.EndEncountered:
-			
 			//            aStream.close()
 			aStream.removeFromRunLoop(NSRunLoop.currentRunLoop(), forMode: NSDefaultRunLoopMode)
 			break
@@ -66,23 +65,17 @@ public class SocketConnection : NSObject, NSStreamDelegate{
 	func connect() {
 		NSLog("# connecting to \(host):\(port)")
 		var cfReadStream : Unmanaged<CFReadStream>?
-		var cfWriteStream : Unmanaged<CFWriteStream>?
+		var cfWriteStream : Unmanaged<CFWriteStream>? //NOTE: I am ignoring this for now.
 		
 		CFStreamCreatePairWithSocketToHost(kCFAllocatorDefault, host, port, &cfReadStream, &cfWriteStream)
 		inputStream = cfReadStream!.takeRetainedValue()
-//		outputStream = cfWriteStream!.takeRetainedValue()
-		
 		inputStream!.delegate = self
-	//	outputStream!.delegate = self
-		
 		inputStream!.scheduleInRunLoop(NSRunLoop.currentRunLoop(), forMode: NSDefaultRunLoopMode)
-//		outputStream!.scheduleInRunLoop(NSRunLoop.currentRunLoop(), forMode: NSDefaultRunLoopMode)
-		
 		inputStream!.open()
-//		outputStream!.open()
 	}
 	
 	
+	// blocks until it receives a line of data.
 	func read() -> String{
 		while (true){
 			var buffer = [UInt8](count: bufferSize, repeatedValue: 0)
@@ -100,11 +93,4 @@ public class SocketConnection : NSObject, NSStreamDelegate{
 			usleep(100000)
 		}
 	}
-	
-//	func send(message:String){
-//		let data:NSData = message.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
-//		let bytesWritten = self.outputStream!.write(UnsafePointer(data.bytes), maxLength: data.length)
-//		NSLog("< send to \(host)")
-//		
-//	}
 }

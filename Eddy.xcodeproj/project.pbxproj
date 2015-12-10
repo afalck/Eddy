@@ -17,6 +17,9 @@
 		4B225CEB1C194C4800E0F390 /* SocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B225CEA1C194C4800E0F390 /* SocketConnection.swift */; };
 		4B225CED1C19C6E600E0F390 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B225CEC1C19C6E600E0F390 /* Reader.swift */; };
 		4B225CEF1C19D77500E0F390 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B225CEE1C19D77500E0F390 /* EventManager.swift */; };
+		4B225CF11C1A044500E0F390 /* Wind_drift.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B225CF01C1A044500E0F390 /* Wind_drift.png */; };
+		4B225CF31C1A04BD00E0F390 /* CurrentCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B225CF21C1A04BD00E0F390 /* CurrentCalculator.swift */; };
+		4B225CF41C1A0A8E00E0F390 /* CurrentCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B225CF21C1A04BD00E0F390 /* CurrentCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		4B225CEA1C194C4800E0F390 /* SocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConnection.swift; sourceTree = "<group>"; };
 		4B225CEC1C19C6E600E0F390 /* Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		4B225CEE1C19D77500E0F390 /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		4B225CF01C1A044500E0F390 /* Wind_drift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wind_drift.png; sourceTree = "<group>"; };
+		4B225CF21C1A04BD00E0F390 /* CurrentCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,7 @@
 				4B225CD81C1934D000E0F390 /* EddyTests */,
 				4B225CC21C1934CF00E0F390 /* Products */,
 				4B225CE41C1937DB00E0F390 /* black arrow.png */,
+				4B225CF01C1A044500E0F390 /* Wind_drift.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +101,7 @@
 				4B225CEA1C194C4800E0F390 /* SocketConnection.swift */,
 				4B225CEC1C19C6E600E0F390 /* Reader.swift */,
 				4B225CEE1C19D77500E0F390 /* EventManager.swift */,
+				4B225CF21C1A04BD00E0F390 /* CurrentCalculator.swift */,
 			);
 			path = Eddy;
 			sourceTree = "<group>";
@@ -190,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B225CCF1C1934CF00E0F390 /* LaunchScreen.storyboard in Resources */,
+				4B225CF11C1A044500E0F390 /* Wind_drift.png in Resources */,
 				4B225CCC1C1934CF00E0F390 /* Assets.xcassets in Resources */,
 				4B225CCA1C1934CF00E0F390 /* Main.storyboard in Resources */,
 				4B225CE51C1937DB00E0F390 /* black arrow.png in Resources */,
@@ -211,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B225CEF1C19D77500E0F390 /* EventManager.swift in Sources */,
+				4B225CF31C1A04BD00E0F390 /* CurrentCalculator.swift in Sources */,
 				4B225CC71C1934CF00E0F390 /* ViewController.swift in Sources */,
 				4B225CEB1C194C4800E0F390 /* SocketConnection.swift in Sources */,
 				4B225CED1C19C6E600E0F390 /* Reader.swift in Sources */,
@@ -223,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B225CDA1C1934D000E0F390 /* EddyTests.swift in Sources */,
+				4B225CF41C1A0A8E00E0F390 /* CurrentCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
