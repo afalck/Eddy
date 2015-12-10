@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import Foundation
 
-class ViewController: UIViewController {
+
+
+class ViewController: UIViewController, NavigationListener {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		start();
 		// Do any additional setup after loading the view, typically from a nib.
 	}
 
@@ -20,6 +25,22 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
+	@IBOutlet var rawFeed: UILabel!
 
+
+	func start(){
+		var socketConnection = SocketConnection(host: "localhost", port: 5001);
+		
+		let reader = Reader(socketConnection: socketConnection);
+		reader.addListener(self);
+		
+		reader.start();
+	}
+	
+	func receivedNavigationData(navigationData: NavigationData){
+		NSLog("\(navigationData)");
+	}
+	
+	
 }
 

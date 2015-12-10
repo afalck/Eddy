@@ -13,6 +13,10 @@
 		4B225CCC1C1934CF00E0F390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B225CCB1C1934CF00E0F390 /* Assets.xcassets */; };
 		4B225CCF1C1934CF00E0F390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B225CCD1C1934CF00E0F390 /* LaunchScreen.storyboard */; };
 		4B225CDA1C1934D000E0F390 /* EddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B225CD91C1934D000E0F390 /* EddyTests.swift */; };
+		4B225CE51C1937DB00E0F390 /* black arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B225CE41C1937DB00E0F390 /* black arrow.png */; };
+		4B225CEB1C194C4800E0F390 /* SocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B225CEA1C194C4800E0F390 /* SocketConnection.swift */; };
+		4B225CED1C19C6E600E0F390 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B225CEC1C19C6E600E0F390 /* Reader.swift */; };
+		4B225CEF1C19D77500E0F390 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B225CEE1C19D77500E0F390 /* EventManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		4B225CD51C1934D000E0F390 /* EddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B225CD91C1934D000E0F390 /* EddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EddyTests.swift; sourceTree = "<group>"; };
 		4B225CDB1C1934D000E0F390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B225CE41C1937DB00E0F390 /* black arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black arrow.png"; sourceTree = "<group>"; };
+		4B225CEA1C194C4800E0F390 /* SocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConnection.swift; sourceTree = "<group>"; };
+		4B225CEC1C19C6E600E0F390 /* Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		4B225CEE1C19D77500E0F390 /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 				4B225CC31C1934CF00E0F390 /* Eddy */,
 				4B225CD81C1934D000E0F390 /* EddyTests */,
 				4B225CC21C1934CF00E0F390 /* Products */,
+				4B225CE41C1937DB00E0F390 /* black arrow.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +92,9 @@
 				4B225CCB1C1934CF00E0F390 /* Assets.xcassets */,
 				4B225CCD1C1934CF00E0F390 /* LaunchScreen.storyboard */,
 				4B225CD01C1934CF00E0F390 /* Info.plist */,
+				4B225CEA1C194C4800E0F390 /* SocketConnection.swift */,
+				4B225CEC1C19C6E600E0F390 /* Reader.swift */,
+				4B225CEE1C19D77500E0F390 /* EventManager.swift */,
 			);
 			path = Eddy;
 			sourceTree = "<group>";
@@ -180,6 +192,7 @@
 				4B225CCF1C1934CF00E0F390 /* LaunchScreen.storyboard in Resources */,
 				4B225CCC1C1934CF00E0F390 /* Assets.xcassets in Resources */,
 				4B225CCA1C1934CF00E0F390 /* Main.storyboard in Resources */,
+				4B225CE51C1937DB00E0F390 /* black arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B225CEF1C19D77500E0F390 /* EventManager.swift in Sources */,
 				4B225CC71C1934CF00E0F390 /* ViewController.swift in Sources */,
+				4B225CEB1C194C4800E0F390 /* SocketConnection.swift in Sources */,
+				4B225CED1C19C6E600E0F390 /* Reader.swift in Sources */,
 				4B225CC51C1934CF00E0F390 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
